@@ -1,4 +1,4 @@
-export default function (req, res) {
+export default function tr(req, res) {
 
     const missions = [
         {
@@ -25,3 +25,5 @@ export default function (req, res) {
     res.status(200).json(missions)
 
 }
+
+tr();

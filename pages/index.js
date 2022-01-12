@@ -7,12 +7,12 @@ import Missions from "../components/Home/Missions/Missions";
 import Navbar from "../components/Home/Navbar/Navbar";
 
 
-const home = ({missions}) => {
+const home = () => {
     return (
         <div>
             <Navbar/>
             <Header/>
-            <Missions data={missions}/>
+            <Missions/>
             <Develop/>
             <Community/>
             <Application/>
@@ -23,13 +23,13 @@ const home = ({missions}) => {
 
 export default home;
 
-export async function getServerSideProps() {
-    const res = await fetch('http://localhost:3000/api/missiondata')
-    const data = await res.json()
+// export async function getServerSideProps() {
+//     const res = await fetch('http://localhost:3000/api/missiondata')
+//     const data = await res.json()
   
-    return {
-        props: {
-            missions: data,
-        }
-    }
-  }
+//     return {
+//         props: {
+//             missions: data,
+//         }
+//     }
+//   }

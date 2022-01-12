@@ -23,7 +23,7 @@ const home = ({missions}) => {
 
 export default home;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const res = await fetch('http://localhost:3000/api/missiondata')
     const data = await res.json()
   

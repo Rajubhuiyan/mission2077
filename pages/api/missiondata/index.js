@@ -1,7 +1,3 @@
-
-
-
-
 export default function (req, res) {
 
     const missions = [
